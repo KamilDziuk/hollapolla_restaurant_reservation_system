@@ -39,6 +39,11 @@ const position_22 = document.querySelector('.position_22');
 
 // Dish name end
 
+
+
+
+
+
 // A function responsible for selecting a specific dish name (async)
 
 position_8.addEventListener("click", async () => {
@@ -55,7 +60,7 @@ position_8.addEventListener("click", async () => {
   // Creating a new div for value end
 
   // Displaying input start
-  position8Element.innerHTML = `Numbers reservation: <br><input type="number" id="numbersReservation8" name="numbersReservation8" placeholder="Numbers reservation" value="9">`;
+  position8Element.innerHTML = `Numbers reservation: <br><input type="text" id="numbersReservation8" name="numbersReservation8" placeholder="Numbers reservation" value="9">`;
 
     // Displaying input end
 // A new element is added to the selected element as its child start
@@ -86,7 +91,7 @@ position_9.addEventListener("click", async () => {
   // Creating a new div for value end
 
   // Displaying input start
-  position9Element.innerHTML = `Numbers reservation: <br><input type="number" id="numbersReservation9" name="numbersReservation9" placeholder="Numbers reservation" value="10">`;
+  position9Element.innerHTML = `Numbers reservation: <br><input type="text" id="numbersReservation9" name="numbersReservation9" placeholder="Numbers reservation" value="10">`;
 
     // Displaying input end
 // A new element is added to the selected element as its child start
@@ -117,7 +122,7 @@ position_10.addEventListener("click", async () => {
   // Creating a new div for value end
 
   // Displaying input start
-  position10Element.innerHTML = `Numbers reservation: <br><input type="number" id="numbersReservation10" name="numbersReservation10" placeholder="Numbers reservation" value="11">`;
+  position10Element.innerHTML = `Numbers reservation: <br><input type="text" id="numbersReservation10" name="numbersReservation10" placeholder="Numbers reservation" value="11">`;
 
     // Displaying input end
 // A new element is added to the selected element as its child start
@@ -149,7 +154,7 @@ position_11.addEventListener("click", async () => {
   // Creating a new div for value end
 
   // Displaying input start
-  position11Element.innerHTML = `Numbers reservation: <br><input type="number" id="numbersReservation11" name="numbersReservation11" placeholder="Numbers reservation" value="12">`;
+  position11Element.innerHTML = `Numbers reservation: <br><input type="text" id="numbersReservation11" name="numbersReservation11" placeholder="Numbers reservation" value="12">`;
 
     // Displaying input end
 // A new element is added to the selected element as its child start
@@ -181,7 +186,7 @@ position_12.addEventListener("click", async () => {
   // Creating a new div for value end
 
   // Displaying input start
-  position12Element.innerHTML = `Numbers reservation: <br><input type="number" id="numbersReservation12" name="numbersReservation12" placeholder="Numbers reservation" value="13">`;
+  position12Element.innerHTML = `Numbers reservation: <br><input type="text" id="numbersReservation12" name="numbersReservation12" placeholder="Numbers reservation" value="13">`;
 
     // Displaying input end
 // A new element is added to the selected element as its child start
@@ -213,7 +218,7 @@ position_13.addEventListener("click", async () => {
   // Creating a new div for value end
 
   // Displaying input start
-  position13Element.innerHTML = `Numbers reservation: <br><input type="number" id="numbersReservation13" name="numbersReservation13" placeholder="Numbers reservation" value="14">`;
+  position13Element.innerHTML = `Numbers reservation: <br><input type="text" id="numbersReservation13" name="numbersReservation13" placeholder="Numbers reservation" value="14">`;
 
     // Displaying input end
 // A new element is added to the selected element as its child start
@@ -244,7 +249,7 @@ position_14.addEventListener("click", async () => {
   // Creating a new div for value end
 
   // Displaying input start
-  position14Element.innerHTML = `Numbers reservation: <br><input type="number" id="numbersReservation14" name="numbersReservation14" placeholder="Numbers reservation" value="15">`;
+  position14Element.innerHTML = `Numbers reservation: <br><input type="text" id="numbersReservation14" name="numbersReservation14" placeholder="Numbers reservation" value="15">`;
 
     // Displaying input end
 // A new element is added to the selected element as its child start
@@ -276,7 +281,7 @@ position_15.addEventListener("click", async () => {
   // Creating a new div for value end
 
   // Displaying input start
-  position15Element.innerHTML = `Numbers reservation: <br><input type="number" id="numbersReservation15" name="numbersReservation15" placeholder="Numbers reservation" value="16">`;
+  position15Element.innerHTML = `Numbers reservation: <br><input type="text" id="numbersReservation15" name="numbersReservation15" placeholder="Numbers reservation" value="16">`;
 
     // Displaying input end
 // A new element is added to the selected element as its child start
@@ -307,7 +312,7 @@ position_16.addEventListener("click", async () => {
   // Creating a new div for value end
 
   // Displaying input start
-  position16Element.innerHTML = `Numbers reservation: <br><input type="number" id="numbersReservation16" name="numbersReservation16" placeholder="Numbers reservation" value="17">`;
+  position16Element.innerHTML = `Numbers reservation: <br><input type="text" id="numbersReservation16" name="numbersReservation16" placeholder="Numbers reservation" value="17">`;
 
     // Displaying input end
 // A new element is added to the selected element as its child start
@@ -338,7 +343,7 @@ position_17.addEventListener("click", async () => {
   // Creating a new div for value end
 
   // Displaying input start
-  position17Element.innerHTML = `Numbers reservation: <br><input type="number" id="numbersReservation17" name="numbersReservation17" placeholder="Numbers reservation" value="18">`;
+  position17Element.innerHTML = `Numbers reservation: <br><input type="text" id="numbersReservation17" name="numbersReservation17" placeholder="Numbers reservation" value="18">`;
 
     // Displaying input end
 // A new element is added to the selected element as its child start
@@ -369,7 +374,7 @@ position_18.addEventListener("click", async () => {
   // Creating a new div for value end
 
   // Displaying input start
-  position18Element.innerHTML = `Numbers reservation: <br><input type="number" id="numbersReservation18" name="numbersReservation18" placeholder="Numbers reservation" value="19">`;
+  position18Element.innerHTML = `Numbers reservation: <br><input type="text" id="numbersReservation18" name="numbersReservation18" placeholder="Numbers reservation" value="19">`;
 
     // Displaying input end
 // A new element is added to the selected element as its child start
@@ -400,7 +405,7 @@ position_19.addEventListener("click", async () => {
   // Creating a new div for value end
 
   // Displaying input start
-  position19Element.innerHTML = `Numbers reservation: <br><input type="number" id="numbersReservation19" name="numbersReservation19" placeholder="Numbers reservation" value="20">`;
+  position19Element.innerHTML = `Numbers reservation: <br><input type="text" id="numbersReservation19" name="numbersReservation19" placeholder="Numbers reservation" value="20">`;
 
     // Displaying input end
 // A new element is added to the selected element as its child start
@@ -416,8 +421,6 @@ position_19.addEventListener("click", async () => {
   // Displaying input value
   position19Value.innerHTML = `${inputElement19.value}`;
 });
-
-
 position_20.addEventListener("click", async () => {
 
   contenerReservationInfo.style.display = "block";
@@ -432,7 +435,7 @@ position_20.addEventListener("click", async () => {
   // Creating a new div for value end
 
   // Displaying input start
-  position20Element.innerHTML = `Numbers reservation: <br><input type="number" id="numbersReservation20" name="numbersReservation20" placeholder="Numbers reservation" value="21">`;
+  position20Element.innerHTML = `Numbers reservation: <br><input type="text" id="numbersReservation20" name="numbersReservation20" placeholder="Numbers reservation" value="21">`;
 
     // Displaying input end
 // A new element is added to the selected element as its child start
@@ -464,7 +467,7 @@ position_21.addEventListener("click", async () => {
   // Creating a new div for value end
 
   // Displaying input start
-  position21Element.innerHTML = `Numbers reservation: <br><input type="number" id="numbersReservation21" name="numbersReservation21" placeholder="Numbers reservation" value="22">`;
+  position21Element.innerHTML = `Numbers reservation: <br><input type="text" id="numbersReservation21" name="numbersReservation21" placeholder="Numbers reservation" value="22">`;
 
     // Displaying input end
 // A new element is added to the selected element as its child start
@@ -495,7 +498,7 @@ position_22.addEventListener("click", async () => {
   // Creating a new div for value end
 
   // Displaying input start
-  position22Element.innerHTML = `Numbers reservation: <br><input type="number" id="numbersReservation22" name="numbersReservation22" placeholder="Numbers reservation" value="23">`;
+  position22Element.innerHTML = `Numbers reservation: <br><input type="text" id="numbersReservation22" name="numbersReservation22" placeholder="Numbers reservation" value="23">`;
 
     // Displaying input end
 // A new element is added to the selected element as its child start
@@ -604,7 +607,7 @@ const reservation_time = document.querySelector('#reservation_time').value;
 
     
             const emailResponse = await Email.send({
-                SecureToken: '',
+                SecureToken: '695cc824-e0c0-48c8-aa1b-4e6bdf9a60fd',
               To: 'reservations@hollapolla.nl',
               From: 'reservations@hollapolla.nl',
                   Subject: `Nowa rezerwacja stolika, kod rezerwacji: ${reservationCode}`,
