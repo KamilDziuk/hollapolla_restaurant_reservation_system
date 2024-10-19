@@ -607,7 +607,7 @@ const reservation_time = document.querySelector('#reservation_time').value;
 
     
             const emailResponse = await Email.send({
-                SecureToken: '695cc824-e0c0-48c8-aa1b-4e6bdf9a60fd',
+                SecureToken: '',
               To: 'reservations@hollapolla.nl',
               From: 'reservations@hollapolla.nl',
                   Subject: `Nowa rezerwacja stolika, kod rezerwacji: ${reservationCode}`,
