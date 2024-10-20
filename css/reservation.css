@@ -92,9 +92,11 @@ color: #ffffff00!important;
   
 position: relative;
 width: 100%;
-margin-top: 5%;
-height: 20% !important;
+margin-top: 2%;
+height: 7% !important;
 overflow: auto !important;
+
+left: 3% !important;
 text-align: center;
 breservation: solid 2px rgb(255, 255, 255) !important;
 left: 0%;

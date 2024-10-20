@@ -51,7 +51,7 @@ position_8.addEventListener("click", async () => {
   contenerReservationInfo.style.display = "block";
 
   // Creating a new div for input start
-  let position8Element = document.createElement('div');
+  let table_number = document.createElement('div');
  
     // Creating a new div for input end
   // Creating a new div for value start
@@ -60,18 +60,18 @@ position_8.addEventListener("click", async () => {
   // Creating a new div for value end
 
   // Displaying input start
-  position8Element.innerHTML = `Numbers reservation: <br><input type="text" id="numbersReservation8" name="numbersReservation8" placeholder="Numbers reservation" value="9">`;
+  table_number.innerHTML = `Numbers reservation: <br><input type="text" id="table_number" name="table_number" placeholder="Numbers reservation" value="9">`;
 
     // Displaying input end
 // A new element is added to the selected element as its child start
-  document.querySelector('.numbersReservationLocation8').appendChild(position8Element);
+  document.querySelector('.numbersReservationLocation8').appendChild(table_number);
 
   document.querySelector('.position8Value').appendChild(position8Value);
 
 // A new element is added to the selected element as its child end
 
 // defining input
-  let inputElement8 = position8Element.querySelector('input');
+  let inputElement8 = table_number.querySelector('input');
 
   // Displaying input value
   position8Value.innerHTML = `${inputElement8.value}`;
@@ -532,69 +532,18 @@ const reservation_date = document.querySelector('#reservation_date').value;
 const reservation_time = document.querySelector('#reservation_time').value;
 
   
-  if (name && phone  && email) {
-      const formData = new FormData();
-      // quantityLocation0
-      formData.append('name', name);
-      formData.append('phone', phone);
-      formData.append('email', email);
-      formData.append('number_of_guests',number_of_guests);
+
+      let formData =  new FormData();
+
+
       formData.append('reservation_date',reservation_date);
       formData.append('reservation_time',reservation_time);
-      formData.append('reservationCode', reservationCode);
+      formData.append('table_number', document.querySelector('#table_number').value);
 
-              formData.append('position8Value', document.querySelector('#numbersReservation8').value);
-
-
-              formData.append('position9Value', document.querySelector('#numbersReservation9').value);
-
-
-
-      
-              formData.append('position10Value', document.querySelector('#numbersReservation10').value);
-    
-
-           formData.append('position11Value', document.querySelector('#numbersReservation11').value);
-  
-
-            formData.append('position12Value', document.querySelector('#numbersReservation12').value);
-  
-
-
-            formData.append('position13Value', document.querySelector('#numbersReservation13').value);
-    
-
-                  formData.append('position14Value', document.querySelector('#numbersReservation14').value);
-
-
-
-      formData.append('position15Value', document.querySelector('#numbersReservation15').value);
-
-
-      formData.append('position16Value', document.querySelector('#numbersReservation16').value);
-    
-
-      formData.append('position17Value', document.querySelector('#numbersReservation17').value);
-
-
-      formData.append('position18Value', document.querySelector('#numbersReservation18').value);
-
-
-      formData.append('position19Value', document.querySelector('#numbersReservation19').value);
-   
-      formData.append('position20Value', document.querySelector('#numbersReservation20').value);
- 
-
-      formData.append('position21Value', document.querySelector('#numbersReservation21').value);
-
-
-      formData.append('position22Value', document.querySelector('#numbersReservation22').value);
-      
 
 
    
 
-      formData.append('message', message);
 
       try {
           const response = await fetch('reservationConfiguration.php', {
@@ -607,7 +556,7 @@ const reservation_time = document.querySelector('#reservation_time').value;
 
     
             const emailResponse = await Email.send({
-                SecureToken: '',
+              SecureToken: '',
               To: 'reservations@hollapolla.nl',
               From: 'reservations@hollapolla.nl',
                   Subject: `Nowa rezerwacja stolika, kod rezerwacji: ${reservationCode}`,
@@ -622,7 +571,7 @@ const reservation_time = document.querySelector('#reservation_time').value;
                          Wiadomość od klienta: ${message}<br><br>
                  
                     
-                                                 Stolik numer 09: ${document.querySelector('#numbersReservation8').value}<br><br>
+                                                 Stolik numer 09: ${document.querySelector('#table_number').value}<br><br>
                        
 
                                                 Stolik numer 10: ${document.querySelector('#numbersReservation9').value}<br><br>
@@ -703,7 +652,7 @@ const reservation_time = document.querySelector('#reservation_time').value;
           textStatus.innerHTML = 'An error occurred while sending the reservations.';
           textStatus.style.color = 'red';
       }
-  }
+  
 });
 
 
