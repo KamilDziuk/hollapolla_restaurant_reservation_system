@@ -176,7 +176,7 @@ const table_number = document.querySelector('#table_number').value;
     
             const emailResponse = await Email.send({
               SecureToken: '',
-         
+  
               To: 'reservations@hollapolla.nl',
               From: 'reservations@hollapolla.nl',
                   Subject: `Nowa rezerwacja stolika, kod rezerwacji: ${reservationCode}`,
@@ -191,7 +191,7 @@ const table_number = document.querySelector('#table_number').value;
                          Wiadomość od klienta: ${message}<br><br>
                  
                     
-                                                 Stolik numer: ${document.querySelector('#table_number').value}<br><br>
+                                                 Numer stolika: ${document.querySelector('#table_number').value}<br><br>
                        
 
 
@@ -214,7 +214,7 @@ const table_number = document.querySelector('#table_number').value;
                   },5000)
               } else {
                 reservationSummaryBackground.style.display = "block";
-                  textStatus.innerHTML = '<br><br>Failed to send the message.<br> This may be due to too many messages being sent at once.<br> Please send your message via hollapolla66@gmail.com <br><br>';
+                  textStatus.innerHTML = '<br><br>Failed to send the message.<br> This may be due to too many messages being sent at once.<br> Please send your message via rezerwacjehollapolla@gmail.com <br><br>';
                   textStatus.style.color = 'red';
                   reservationCodeText.style.display = "none";
                   setTimeout( () => {
@@ -227,7 +227,7 @@ const table_number = document.querySelector('#table_number').value;
           } else if (data.includes('This date is already booked')) {
             reservationSummaryBackground.style.display = "block";
             reservationCodeText.style.display = "none";
-              textStatus.innerHTML = 'This date is already booked';
+              textStatus.innerHTML = `The table with the number: ${document.querySelector('#table_number').value} and date: ${reservation_date} and time:  ${reservation_time} is already reserved. Please select another table or time`;
               textStatus.style.color = 'red';
               setTimeout( () => {
                 reservationSummaryBackground.style.display = "none";
