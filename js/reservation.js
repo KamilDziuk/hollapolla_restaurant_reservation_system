@@ -204,7 +204,8 @@ const table_number = document.querySelector('#table_number').value;
               if (emailResponse === 'OK') {
                 reservationSummaryBackground.style.display = "block";
                 reservationCodeText.style.color = 'greenyellow';
-                textStatus.innerHTML = `Your reservation has been accepted!`;
+                textStatus.innerHTML = `Your reservation has been accepted!<br>
+                Reservation: number table: ${document.querySelector('#table_number').value}, date: ${reservation_date}, time:  ${reservation_time} `;
              
                   setTimeout( () => {
                     reservationSummaryBackground.style.display = "none";
