@@ -188,8 +188,9 @@ const table_number = document.querySelector('#table_number').value;
       Data: ${reservation_date}<br><br>
       Godzina: ${reservation_time}<br><br>
                       Kod zamówenia: ${reservationCode} <br><br>
-                         Wiadomość od klienta: ${message}<br><br>
+                      
                          Numer stolika: ${document.querySelector('#table_number').value}<br><br>
+                          Wiadomość od klienta: ${message}<br><br>
                        Zgody: <br>
                        zgoda0: I consent to the processing by HollaPolla of my personal data contained in this contact form for the purpose and to the extent necessary to process the application.
 zgoda1: I consent to the processing by HollaPolla of my personal data contained in this contact form for the purpose of sending me commercial offers for the company's own products electronically.
