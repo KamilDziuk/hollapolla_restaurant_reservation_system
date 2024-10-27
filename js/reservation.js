@@ -188,9 +188,8 @@ const table_number = document.querySelector('#table_number').value;
       Data: ${reservation_date}<br><br>
       Godzina: ${reservation_time}<br><br>
                       Kod zamówenia: ${reservationCode} <br><br>
-                      
+                         Wiadomość od klienta: ${message}<br><br>
                          Numer stolika: ${document.querySelector('#table_number').value}<br><br>
-                          Wiadomość od klienta: ${message}<br><br>
                        Zgody: <br>
                        zgoda0: I consent to the processing by HollaPolla of my personal data contained in this contact form for the purpose and to the extent necessary to process the application.
 zgoda1: I consent to the processing by HollaPolla of my personal data contained in this contact form for the purpose of sending me commercial offers for the company's own products electronically.
@@ -213,7 +212,7 @@ zgoda3: I consent to the processing by HollaPolla of my personal data contained 
                     textStatus.style.display = "none";
                     reservationCodeText.style.display = "none";
                    
-                  },5000)
+                  },10000)
               } else {
                 reservationSummaryBackground.style.display = "block";
                   textStatus.innerHTML = '<br><br>Failed to send the message.<br> This may be due to too many messages being sent at once.<br> Please send your message via rezerwacjehollapolla@gmail.com <br><br>';
@@ -224,7 +223,7 @@ zgoda3: I consent to the processing by HollaPolla of my personal data contained 
                     textStatus.style.display = "none";
                     reservationCodeText.style.display = "none";
                    
-                  },5000)
+                  },10000)
               }
           } else if (data.includes('This date is already booked')) {
             reservationSummaryBackground.style.display = "block";
@@ -236,7 +235,7 @@ zgoda3: I consent to the processing by HollaPolla of my personal data contained 
                 textStatus.style.display = "none";
                 reservationCodeText.style.display = "none";
                
-              },5000)
+              },10000)
           }
       } catch (error) {
           console.error('Error:', error);
