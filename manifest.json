@@ -1,0 +1,44 @@
+{
+  "background_color": "#be8040",
+  "dir": "auto",
+  "display": "standalone",
+  "name": "HollaPolla Reservations",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "pollapolla",
+  "start_url": "https://reservations.hollapolla.nl/",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "image/icone.jpg",
+      "type": "image/jpeg",
+      "sizes": "512x512"
+    },
+    {
+      "src": "image/icon-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "image/icon-152x152.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "image/icon-167x167.png",
+      "type": "image/png",
+      "sizes": "167x167"
+    },
+    {
+      "src": "image/icon-180x180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    }
+  ],
+  "id": "pollapolla ",
+  "description": "HollaPolla - Reservations",
+  "lang": "nl",
+  "categories": [
+    "business"
+  ]
+}

@@ -3,7 +3,7 @@ body {
     margin: 0;
 
     
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/image/IMG-668ad1c6ae1297.07404419.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/image/IMG-668ad1c6ae1297.07404418.jpg");
     
     background-size: cover;
     background-position: center;
@@ -17,9 +17,11 @@ body {
 {
   position: relative;
   padding-left: 5%;
+  padding-right: 2%;
   padding-top: 5%;
   padding-bottom: 5%;
   font-size: 17px;
+  text-align: left;
 
 }
   .reservationSummaryBackground
@@ -108,140 +110,139 @@ left: 0%;
   
   header {
   
-     height: 550px;
-      max-width: 100%;
-      background: url(/image/backgroundMain.webp) center; 
-      background-size: cover;
-      background-attachment: fixed;
-      display: flex;
-      flex-direction: column;
-  
-  /*
-    NAV
-  */
-  /*
-    CENTER HEADER TEXT
-  */
-  }
-  header nav {
-  padding: 15px 35px;
-  display: flex;
-  position: relative;
-  }
-  header nav h2 {
-  
-  margin-bottom: 0;
-  flex: 1;
-  letter-spacing: 3px;
-  font-family: "Overpass Mono", monospace !important;
-  }
-  header nav h2 #logo {
-  color: lightgray;
-  text-transform: uppercase;
-  breservation-bottom: solid 2px lightgray;
-  }
-  header nav .nav-button {
-  color: #c0c0c0;
-  font-size: 23px;
-  }
-  header nav div {
-  background: rgba(0, 0, 0, 0.9);
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-  text-align: center;
-  transform: scale(0);
-  opacity: 0;
-  transition: opacity 0.2s;
-  }
-  header nav div ul {
-  position: relative;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  }
-  header nav div ul .exit-menu {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  color: lightgray;
-  font-size: 20px;
-  padding: 10px;
-  }
-  header nav div ul li {
-  font-family: "PT Sans", sans-serif !important;
-  text-transform: uppercase;
-  }
-  header nav div ul li a {
-  display: block;
-  color: lightgray;
-  padding: 15px 5px;
-  transition: all 0.4s;
-  }
-  header nav div ul li a:hover, header nav div ul li a .active:hover {
-  color: #be8040;
-  breservation-bottom-color: #be8040;
-  }
-  header .center {
-  line-height: 0;
-  margin: auto;
-  text-align: center;
-  color: white;
-  }
-  header .center h1 {
-  font-family: "Alex Brush", cursive !important;
-  color: #be8040;
-  font-size: 100px;
-  margin-bottom: 34px;
-  }
-  header .center h2 {
-  margin-top: 100px;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 80px;
-  }
-  header .center #asterisk {
-  margin-top: 50px;
-  color: #be8040;
-  line-height: 0.5;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  }
-  header .center #asterisk:before, header .center #asterisk:after {
-  content: "";
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  height: 1px;
-  width: 0%;
-  opacity: 0;
-  background: white;
-  margin-top: 0px;
-  }
-  header .center #asterisk:before {
-  margin-right: 10px;
-  }
-  header .center #asterisk:after {
-  margin-left: 10px;
-  }
-  header .center p {
-  text-transform: uppercase;
-  margin-top: 30px;
-  font-size: 30px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  }
-  
-  nav div.show {
-  transform: scale(1);
-  opacity: 1;
-  }
-  
+    height: 550px;
+     max-width: 100%;
+     background: url(/image/backgroundMain.webp) center; 
+     background-size: cover;
+     background-attachment: fixed;
+     display: flex;
+     flex-direction: column;
+ 
+ /*
+   NAV
+ */
+ /*
+   CENTER HEADER TEXT
+ */
+ }
+ header nav {
+ padding: 15px 35px;
+ display: flex;
+ position: relative;
+ }
+ header nav h2 {
+ 
+ margin-bottom: 0;
+ flex: 1;
+ letter-spacing: 3px;
+ font-family: "Overpass Mono", monospace !important;
+ }
+ header nav h2 #logo {
+ color: lightgray;
+ text-transform: uppercase;
+ border-bottom: solid 2px lightgray;
+ }
+ header nav .nav-button {
+ color: #c0c0c0;
+ font-size: 23px;
+ }
+ header nav div {
+ background: rgba(0, 0, 0, 0.9);
+ position: fixed;
+ right: 0;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ z-index: 1;
+ text-align: center;
+ transform: scale(0);
+ opacity: 0;
+ transition: opacity 0.2s;
+ }
+ header nav div ul {
+ position: relative;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ }
+ header nav div ul .exit-menu {
+ position: absolute;
+ top: 15px;
+ right: 15px;
+ color: lightgray;
+ font-size: 20px;
+ padding: 10px;
+ }
+ header nav div ul li {
+ font-family: "PT Sans", sans-serif !important;
+ text-transform: uppercase;
+ }
+ header nav div ul li a {
+ display: block;
+ color: lightgray;
+ padding: 15px 5px;
+ transition: all 0.4s;
+ }
+ header nav div ul li a:hover, header nav div ul li a .active:hover {
+ color: #be8040;
+ border-bottom-color: #be8040;
+ }
+ header .center {
+ line-height: 0;
+ margin: auto;
+ text-align: center;
+ color: white;
+ }
+ header .center h1 {
+ font-family: "Alex Brush", cursive !important;
+ color: #be8040;
+ font-size: 100px;
+ margin-bottom: 34px;
+ }
+ header .center h2 {
+ margin-top: 100px;
+ text-transform: uppercase;
+ letter-spacing: 5px;
+ font-size: 80px;
+ }
+ header .center #asterisk {
+ margin-top: 50px;
+ color: #be8040;
+ line-height: 0.5;
+ font-size: 30px;
+ display: flex;
+ justify-content: center;
+ }
+ header .center #asterisk:before, header .center #asterisk:after {
+ content: "";
+ display: inline-block;
+ position: relative;
+ vertical-align: middle;
+ height: 1px;
+ width: 0%;
+ opacity: 0;
+ background: white;
+ margin-top: 0px;
+ }
+ header .center #asterisk:before {
+ margin-right: 10px;
+ }
+ header .center #asterisk:after {
+ margin-left: 10px;
+ }
+ header .center p {
+ text-transform: uppercase;
+ margin-top: 30px;
+ font-size: 30px;
+ font-weight: bold;
+ letter-spacing: 3px;
+ }
+ 
+ nav div.show {
+ transform: scale(1);
+ opacity: 1;
+ }
   
   .custom-font {
   font-family: "Alex Brush", cursive;
@@ -374,12 +375,12 @@ left: 0%;
   position: absolute;
 
     left: 30%;
-    margin-top: -42% ;
+    margin-top: 10% ;
     margin-bottom: 0% ;
 transform: translateX(-50%);
 width: 30% !important;
-height: 75%;
-overflow: auto;
+height: 100%;
+/* overflow: auto; */
 z-index: 2;
 }
   #imageReservations0 
@@ -409,7 +410,7 @@ z-index: 3;
 
   form
 {
-position: relative;
+position: absolute;
 
 background-color: #26262632;
 backdrop-filter : blur(15px);
@@ -417,13 +418,17 @@ left: 70%;
 transform: translateX(-50%);
 margin-bottom: 5%;
 width: 350px;
-margin-top: 8%;
+margin-top: 7%;
 z-index: 22 !important;
 
 }
 
+#reservation_date
+{
+  width: 138px;
+}
 /* Checkbox start */
-.container {
+/* .container {
   background-color: #26262632 ;
 backdrop-filter : blur(15px);
   display: block;
@@ -435,10 +440,10 @@ backdrop-filter : blur(15px);
   font-size: 12px;
   text-align: left ;
 
-}
+} */
 
 /* Hide the browser's default checkbox */
-.container input {
+/* .container input {
   
   position: absolute;
   opacity: 0;
@@ -446,7 +451,7 @@ backdrop-filter : blur(15px);
   height: 0;
   width: 0;
 
-}
+} */
 
 /* Create a custom checkbox */
 .checkmark {
@@ -459,14 +464,14 @@ backdrop-filter : blur(15px);
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+/* .container:hover input ~ .checkmark {
   background-color: #ccc;
-}
+} */
 
 /* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
+/* .container input:checked ~ .checkmark {
   background-color:rgb(255, 196, 0)
-}
+} */
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
@@ -476,12 +481,12 @@ backdrop-filter : blur(15px);
 }
 
 /* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
+/* .container input:checked ~ .checkmark:after {
   display: block;
-}
+} */
 
 /* Style the checkmark/indicator */
-.container .checkmark:after {
+/* .container .checkmark:after {
   left: 5px;
   top: 0px;
   width: 3px;
@@ -491,7 +496,7 @@ backdrop-filter : blur(15px);
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-}
+} */
 /* Checkbox end */
 svg path {
   fill: rgba(255, 255, 255, 0); 
@@ -529,6 +534,7 @@ textarea::placeholder {
     color: #ffffff; 
   
 }
+
 
 
 .textStatus
@@ -841,29 +847,30 @@ font-size:18px;
   }
   
   .nav_headar{
-  background-color: #26262600;
-  position        : fixed;
-  top             : 0;
-  left            : 0;
-  width           : 100%;
-  height          : 100px;
-  display         : flex;
-  justify-content : space-between;
-  align-items     : center;
-  transition      : 0.6s;
-  z-index: 960;
-  }
-  
-  .nav_headar:hover{
-  background-color: #26262632;
-  
-  }
-  
-  .nav_headar.sticky{
-  background-color: #26262632;
-  backdrop-filter : blur(15px);
-  padding         : 0px 0px;
-  }
+    background-color: #26262600;
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 100px;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    transition      : 0.6s;
+    z-index: 960;
+    
+    }
+    
+    .nav_headar:hover{
+    background-color: #26262632;
+    
+    }
+    
+    .nav_headar.sticky{
+    background-color: #26262632;
+    backdrop-filter : blur(15px);
+    padding         : 0px 0px;
+    }
   
   li{
   list-style: none;
@@ -966,6 +973,73 @@ height: 130px;
   left: 26%;
 
 }
+
+
+
+  /* The containerCheckCheck */
+  .containerCheck {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: left;
+  }
+  
+  /* Hide the browser's default radio button */
+  .containerCheck input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+  
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .containerCheck:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .containerCheck input:checked ~ .checkmark {
+    background-color: #be8040;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .containerCheck input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .containerCheck .checkmark:after {
+     top: 5px;
+    left: 5px;
+    width: 5px;
+    height: 5px;
+  
+    background: white;
+  }
     
   @media(max-width:1200px){
     .logoHP
@@ -1008,11 +1082,11 @@ height: 130px;
       top             : 70px;
       gap             : 0;
       flex-direction  : column;
-      background-color: #26262632;
+      background-color: #262626;
       width           : 100%;
       text-align      : center;
       transition      : 0.3s;
-      backdrop-filter : blur(15px) !important; 
+     
       z-index:960;
     }
     
@@ -1043,6 +1117,7 @@ height: 130px;
         padding-bottom: 10%;
      
       }
+ 
       #contenerImage
       {
         position: absolute;
@@ -1053,15 +1128,11 @@ height: 130px;
           
       transform: translateX(-50%);
       width: 95% !important;
-      height: 50%;
-      overflow: auto;
+      /* height: 50%; */
+      /* overflow: auto; */
       z-index: 2;
       }
 
-    }
-
-
-    @media(max-width:800px){
 
       #contenerReservationInfo
       {
@@ -1083,33 +1154,41 @@ left: 50%;
 transform: translateX(-50%);
 margin-bottom: 0%;
 width: 250px;
-margin-top: 14%;
+margin-top: 20%;
 
 }
 
 
 input,textarea
 {
-position: relative;
+/* position: relative;
 display: flex;
 left: 50%;
 margin: 1.5%;
 transform: translateX(-50%);
-top: -5%;
+top: -5%; */
 
-font-size:12px;
+font-size:13px;
 
 }
 
+#reservation_date
+{
+  width: 96px;
+}
 
-label
+#reservation_time
+{
+  width: 64px;
+}
+/* label
 {
 position: relative;  
 top: 10%;
 margin: 1%;
 font-size:12px;
 
-}
+} */
 
 .textStatus
 {

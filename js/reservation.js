@@ -44,6 +44,19 @@ const position_22 = document.querySelector('.position_22');
 
 // Dish name end
 
+// Local date start
+currentDate = () =>{ 
+let date = new Date();
+
+let currentDateResult =  date.getFullYear() + "-" +
+("0" + (date.getMonth() + 1)).slice(-2) + "-" + ("0" + date.getDate()).slice(-2) ;
+
+document.querySelector('#reservation_date').value=`${currentDateResult}`; 
+document.querySelector('#reservation_date').min=`${currentDateResult}`; 
+}
+currentDate();
+// Local date end
+
 
 
 
@@ -56,6 +69,7 @@ position_8.addEventListener("click", async () => {
    table_number = document.querySelector('#table_number').value = "9";
 
 
+   
   
 
 });
@@ -191,8 +205,8 @@ const table_number = document.querySelector('#table_number').value;
                          Wiadomość od klienta: ${message}<br><br>
                          Numer stolika: ${document.querySelector('#table_number').value}<br><br>
                        Zgody: <br>
-                       zgoda0: I consent to the processing by HollaPolla of my personal data contained in this contact form for the purpose and to the extent necessary to process the application.
-zgoda1: I consent to the processing by HollaPolla of my personal data contained in this contact form for the purpose of sending me commercial offers for the company's own products electronically.
+                       zgoda0: I consent to the processing by HollaPolla of my personal data contained in this contact form for the purpose and to the extent necessary to process the application.<br><br>
+zgoda1: I consent to the processing by HollaPolla of my personal data contained in this contact form for the purpose of sending me commercial offers for the company's own products electronically.<br><br>
 zgoda3: I consent to the processing by HollaPolla of my personal data contained in this contact form for the purpose of telephone contact by the company's representatives in matters related to the commercial offer for its own products.
 
 
@@ -204,8 +218,8 @@ zgoda3: I consent to the processing by HollaPolla of my personal data contained 
               if (emailResponse === 'OK') {
                 reservationSummaryBackground.style.display = "block";
                 reservationCodeText.style.color = 'greenyellow';
-                textStatus.innerHTML = `Your reservation has been accepted!<br>
-                Reservation: number table: ${document.querySelector('#table_number').value}, date: ${reservation_date}, time:  ${reservation_time} `;
+                textStatus.innerHTML = `Your reservation has been accepted!<br><br>
+                Reservation:<br>Number table: ${document.querySelector('#table_number').value}<br> Date: ${reservation_date}<br> Time: ${reservation_time} `;
              
                   setTimeout( () => {
                     reservationSummaryBackground.style.display = "none";
@@ -215,7 +229,7 @@ zgoda3: I consent to the processing by HollaPolla of my personal data contained 
                   },10000)
               } else {
                 reservationSummaryBackground.style.display = "block";
-                  textStatus.innerHTML = '<br><br>Failed to send the message.<br> This may be due to too many messages being sent at once.<br> Please send your message via rezerwacjehollapolla@gmail.com <br><br>';
+                  textStatus.innerHTML = '<br><br>Failed to send the message.<br><br> This may be due to too many messages being sent at once.<br> Please send your message via rezerwacjehollapolla@gmail.com <br><br>';
                   textStatus.style.color = 'red';
                   reservationCodeText.style.display = "none";
                   setTimeout( () => {
@@ -228,7 +242,7 @@ zgoda3: I consent to the processing by HollaPolla of my personal data contained 
           } else if (data.includes('This date is already booked')) {
             reservationSummaryBackground.style.display = "block";
             reservationCodeText.style.display = "none";
-              textStatus.innerHTML = `The table with the number: ${document.querySelector('#table_number').value} and date: ${reservation_date} and time:  ${reservation_time} is already reserved. Please select another table or time`;
+              textStatus.innerHTML = `The table with the number:<br><br> ${document.querySelector('#table_number').value} and date: ${reservation_date} and time:  ${reservation_time} is already reserved. Please select another table or time`;
               textStatus.style.color = 'red';
               setTimeout( () => {
                 reservationSummaryBackground.style.display = "none";
@@ -238,9 +252,11 @@ zgoda3: I consent to the processing by HollaPolla of my personal data contained 
               },10000)
           }
       } catch (error) {
+       
           console.error('Error:', error);
           textStatus.innerHTML = 'An error occurred while sending the reservations.';
           textStatus.style.color = 'red';
+      
       }
   
 });

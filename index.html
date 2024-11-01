@@ -3,11 +3,18 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Reservations</title>
+  <title>HollaPolla - Reservations</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/reservation.css">
-  <link rel="icon" type="image/jpg" href="image/browserpictogram.jpg">
+  <link rel="icon" type="image/png" href="image/browserpictogram.png">
+  <link rel="apple-touch-icon" href="image/icon-96x96.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="image/icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="image/icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="image/icon-180x180.png">
+  <link rel="manifest" href="manifest.json">
+  
+  
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -33,9 +40,7 @@
   <a href="https://reservations.hollapolla.nl" class="nav-link" id="openReservations"   style="color:#be8040"    >Reservations</a>        
 </li>
 
-<li class="nav-item">
-<a href="#contact" class="nav-link">Kontakt</a>      
-</li>
+
 </li>
 <li class="nav-item">
  
@@ -75,59 +80,54 @@
 </div>
   
 </div>
-
+<br><br>
 <form id="reservationsForm">
  <div class="information">Reservations for more than 4 people are subject to a surcharge of 5 €  per person.</div> 
 
   <input type="text" id="name" name="name" placeholder=" Last name">
 
   <br>
-  <input type="email" id="email" name="email" placeholder="Email">
+  <input type="email" id="email" name="email" placeholder="Email" required>
   <br>
-  <input type="number" id="phone" name="phone" placeholder=" Phone">
+  <input type="number" id="phone" name="phone" placeholder=" Phone" required>
 <br>
-<input  type="number" id="number_of_guests" name="number_of_guests" placeholder="Number of guests">
+<input  type="number" id="number_of_guests" name="number_of_guests" placeholder="Number of guests" required>
 <br>
-<input type="text" id="table_number" name="table_number" placeholder="Numbers reservation">
+<input type="text" id="table_number" name="table_number" placeholder="Numbers reservation" required>
 <br>
-<input type="date" id="reservation_date" name="reservation_date" placeholder=" Date">
+<input type="date" id="reservation_date" name="reservation_date" max="2026-10-31" required>
 <br>
-<input type="time" id="reservation_time" name="reservation_time" placeholder=" Time">
+<input type="time" id="reservation_time" name="reservation_time" value="09:00">
 <br>
   
 
   <div id="contenerReservationInfo">
 
 
-
-  <br>
-  
   </div>
  
 
-  <br>
+
 
 <textarea    rows="4" cols="50"  id="message" name="message" placeholder=" Message"></textarea>
 
   <input type="submit" id="submit" value=" Submit">
+  <div class="information" style="color: #be8040; top: 14px;">Accept the rules to send</div> 
+  <label class="containerCheck">I consent to the processing by HollaPolla of my personal data contained in this contact form for the purpose and to the extent necessary to process the application.
+    <input type="checkbox"  name="checkbox" required>
+    <span class="checkmark"></span>
+  </label>
+  <label class="containerCheck">I consent to the processing by HollaPolla of my personal data contained in this contact form for the purpose of sending me commercial offers for the company's own products electronically.
+    <input type="checkbox" name="checkbox" required>
+    <span class="checkmark"></span>
+  </label>
+  <label class="containerCheck"> I consent to the processing by HollaPolla of my personal data contained in this contact form for the purpose of telephone contact by the company's representatives in matters related to the commercial offer for its own products.
+    <input type="checkbox" name="checkbox" required>
+    <span class="checkmark"></span>
+  </label>
 
+  </div> 
 
-
-  <body>
-  
-
-    <label class="container">I consent to the processing by HollaPolla of my personal data contained in this contact form for the purpose and to the extent necessary to process the application.
-      <input type="checkbox">
-      <span class="checkmark"></span>
-      </label>
-      <label class="container">I consent to the processing by HollaPolla of my personal data contained in this contact form for the purpose of sending me commercial offers for the company's own products electronically.
-      <input type="checkbox">
-      <span class="checkmark"></span>
-      </label>
-      <label class="container">I consent to the processing by HollaPolla of my personal data contained in this contact form for the purpose of telephone contact by the company's representatives in matters related to the commercial offer for its own products.
-      <input type="checkbox">
-      <span class="checkmark"></span>
-      </label>
 
 </form>
 
@@ -189,13 +189,6 @@ c-47 3 -90 -2 -121 -12z"/>
 <img id="imageReservations0" src="image/mapTable.jpg">
 
 </div>
-<!-- <footer>
-  <section id="contact"></section>
-  <div class="textLocation"><b>Lokalizacja</b><br><br>Wilhelminapark 66, 5041 ED Tilburg, Holandia<br></div>
-  <div class="textContact"><b>Kontakt</b><br><br>Email: hollapolla66@gmail.com<br>Phone: + 31 6 58723606<br></div>
-  <div class="textInformation"><b>Informacije</b><br><br>kvk: 92146872<br></div>
-</footer> -->
-
 
 <!-- email  connect start -->
 <script src="https://smtpjs.com/v3/smtp.js"></script>
