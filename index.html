@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>HollaPolla - Reservations</title>
@@ -23,7 +23,7 @@
 <div class="nav_headar">
   <div class="container">
     <nav class="navbar">
-      <a href="/." class="nav-logo"><img    class="logoHP"  src="/image/logoHP.png">  </a>
+      <a href="https://hollapolla.nl/" class="nav-logo"><img    class="logoHP"  src="/image/logoHP.png">  </a>
       <ul class="nav-menu">
 
          <li class="nav-item">
@@ -37,13 +37,17 @@
 </li>
 
 <li class="nav-item">
-  <a href="https://reservations.hollapolla.nl" class="nav-link" id="openReservations"   style="color:#be8040"    >Reservations</a>        
+  <a href="https://reservations.hollapolla.nl" class="nav-link" id="openReservations"   style="color:#be8040"    ><b>Table reservation EN</b></a>        
 </li>
+<li class="nav-item">
+     
+  <a href="https://orders.hollapolla.nl/" class="nav-link" id="openReservations"   style="color:#f4d135"    ><b>Online ordering EN</b></a>        
 
+  </li>
 
 </li>
 <li class="nav-item">
- 
+  <a style="color:#cdcdcd"   onclick="window.location.href='tel:+31 6 58723606'">+31 6 58723606</a>
 
 </li>
 
@@ -80,32 +84,19 @@
 </div>
   
 </div>
-<br><br>
 <form id="reservationsForm">
  <div class="information">Reservations for more than 4 people are subject to a surcharge of 5 €  per person.</div> 
-
   <input type="text" id="name" name="name" placeholder=" Last name">
-
-  <br>
   <input type="email" id="email" name="email" placeholder="Email" required>
-  <br>
   <input type="number" id="phone" name="phone" placeholder=" Phone" required>
-<br>
 <input  type="number" id="number_of_guests" name="number_of_guests" placeholder="Number of guests" required>
-<br>
-<input type="text" id="table_number" name="table_number" placeholder="Numbers reservation" required>
-<br>
+<div class="information">You can select a table by clicking on the table number on the <b>restaurant</b> layout on the left. Table numbers range from<b> 9</b> to <b>23</b>.</div> 
+<input type="number" id="table_number" name="table_number" placeholder="Table number 9 - 23" min="9" max="23"  required>
 <input type="date" id="reservation_date" name="reservation_date" max="2026-10-31" required>
-<br>
 <input type="time" id="reservation_time" name="reservation_time" value="09:00">
-<br>
-  
-
   <div id="contenerReservationInfo">
-
-
   </div>
- 
+
 
 
 

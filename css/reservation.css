@@ -523,8 +523,10 @@ svg path:hover {
     filter: drop-shadow(2px 2px 5px rgb(255, 196, 0)); 
 	}
 }
-
-
+input
+{
+  padding: 1%;
+}
 input::placeholder {
   color: #ffffff; 
 
@@ -540,7 +542,7 @@ textarea::placeholder {
 .textStatus
 {
   transform: translateX(-50%);
-  background-color: #4b4b4b;
+  background-color: #4b4b4b00;
   width: 90%;
 position: relative;
 margin-top: 5%;
@@ -882,7 +884,7 @@ font-size:18px;
   }
     
   .container{
-  width : 90%;
+  width : 100%;
   margin: auto;
   
   }
@@ -907,7 +909,7 @@ font-size:18px;
   gap            : 35px;
   margin-top: -30px;
   left: 50%;
-  transform: translateX(-30%);
+  transform: translateX(-20%);
   }
 
     

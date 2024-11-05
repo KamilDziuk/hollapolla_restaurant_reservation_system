@@ -46,15 +46,16 @@ const position_22 = document.querySelector('.position_22');
 
 // Local date start
 currentDate = () =>{ 
-let date = new Date();
+  let date = new Date();
+  
+  let currentDateResult =  date.getFullYear() + "-" +
+  ("0" + (date.getMonth() + 1)).slice(-2) + "-" + ("0" + date.getDate()).slice(-2) ;
+  
+  document.querySelector('#reservation_date').value=`${currentDateResult}`; 
+  document.querySelector('#reservation_date').min=`${currentDateResult}`; 
+  }
+  currentDate();
 
-let currentDateResult =  date.getFullYear() + "-" +
-("0" + (date.getMonth() + 1)).slice(-2) + "-" + ("0" + date.getDate()).slice(-2) ;
-
-document.querySelector('#reservation_date').value=`${currentDateResult}`; 
-document.querySelector('#reservation_date').min=`${currentDateResult}`; 
-}
-currentDate();
 // Local date end
 
 
@@ -185,7 +186,7 @@ const table_number = document.querySelector('#table_number').value;
           });
           const data = await response.text();
 
-          if (!data.includes('This date is already booked')) {
+          if (!data.includes('This date is already booked') ) {
 
     
             const emailResponse = await Email.send({
@@ -193,7 +194,7 @@ const table_number = document.querySelector('#table_number').value;
   
               To: 'reservations@hollapolla.nl',
               From: 'reservations@hollapolla.nl',
-                  Subject: `Nowa rezerwacja stolika, kod rezerwacji: ${reservationCode}`,
+                  Subject: `Nowa rezerwacja stolika, numer stolika ${document.querySelector('#table_number').value}. Kod rezerwacji: ${reservationCode}`,
                   Body: `
                       Imię: ${name}<br><br>
                       Telefon: ${phone}<br><br>
@@ -201,7 +202,7 @@ const table_number = document.querySelector('#table_number').value;
                       Liczba osób:  ${number_of_guests} <br><br>
       Data: ${reservation_date}<br><br>
       Godzina: ${reservation_time}<br><br>
-                      Kod zamówenia: ${reservationCode} <br><br>
+                      Kod rezerwacji: ${reservationCode} <br><br>
                          Wiadomość od klienta: ${message}<br><br>
                          Numer stolika: ${document.querySelector('#table_number').value}<br><br>
                        Zgody: <br>
