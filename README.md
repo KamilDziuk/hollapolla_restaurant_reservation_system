@@ -1,5 +1,5 @@
 # Hollapolla - Table Reservation System
-![presentation](video/presentation.gif)
+![presentation](image/presentation.gif)
 ## Project Description  
 Hollapolla is an interactive table reservation system available at [reservations.hollapolla.nl](https://reservations.hollapolla.nl). It allows users to conveniently book a table through an interactive restaurant map and a reservation form.
 
