@@ -1,9 +1,8 @@
 <?php
 $config = array(
-    'servername' => '',
-    'username' => '',
-    'password' => '',
-    'dbname' => ''
+'servername' => '',
+'username' => '',
+'password' => '',
+'dbname' => ''
 );
-
 ?>
